@@ -32,7 +32,7 @@ div1PM.appendChild(task1PM);
 
 const task2PM = document.createElement("input");
 task2PM.placeholder = "";
-task2PM.id = "input9AM";
+task2PM.id = "input2PM";
 div2PM.appendChild(task2PM);
 
 const task3PM = document.createElement("input");
@@ -49,3 +49,23 @@ const task5PM = document.createElement("input");
 task5PM.placeholder = "";
 task5PM.id = "input5PM";
 div5PM.appendChild(task5PM);
+
+
+// stores user input in local storage 
+
+$(".buttons").click(function(event) {
+    event.preventDefault();
+
+    const tasks =[{
+        am09: input9AM.value,
+        am10: input10AM.value,
+        am11: input11AM.value,
+        pm12: input12PM.value,
+        pm01: input1PM.value,
+        pm02: input2PM.value,
+        pm03: input3PM.value,
+        pm04: input4PM.value,
+        pm05: input5PM.value
+    }];
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+})
