@@ -69,3 +69,5 @@ $(".buttons").click(function(event) {
     }];
     localStorage.setItem('tasks', JSON.stringify(tasks));
 })
+
+
