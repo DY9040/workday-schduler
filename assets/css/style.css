@@ -87,3 +87,10 @@ textarea{
   padding: 25px 0 25px 0;
   border-radius: 0 15px 15px 0;
 }
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
